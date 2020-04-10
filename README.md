@@ -5,7 +5,7 @@ this is a minimilistic http server that only supports HTTP/1.1 GET requests.
 Instruction for running the http server
 ---------
 
-Extract the files from the zip archive. cd into the folder with the extracted files. 
+Clone or Download the repository and Extract the files from the zip archive. cd into the folder with the extracted files. 
 There is a config.yaml file with configurations for server_root, the server root folder and the port. 
 Change the two configs to make the webserver host files from the root folder and to listen on the configured port.
 After config.yaml is updated, run the following command to start the server:
