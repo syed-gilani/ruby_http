@@ -1,7 +1,7 @@
 # ruby_http: a minimal http ruby server
 
 Instruction for running the http server
-=========
+---------
 
 Extract the files from the zip archive. cd into the folder with the extracted files. 
 There is a config.yaml file with configurations for server_root, the server root folder and the port. 
@@ -15,14 +15,14 @@ if you just use the localhost:port with the filename, web server will return the
 if it exists.
 
 Instructions for running the Tests
-=========
+---------
 
 There is a file http_test.rb that contains some unit tests using ruby unit test library. You can run the tests using the following command
 			
 			ruby http_test.rb
 		
 Instructions for running BDD tests developed using Minitest
-=========
+---------
 
 There is a file named http_spec.rb that contains test using the BDD paradigm. Run the tests by using the following command:
 			
