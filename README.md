@@ -1,5 +1,7 @@
 # ruby_http: a minimal http ruby server
 
+this is a minimilistic http server that only supports HTTP/1.1 GET requests.
+
 Instruction for running the http server
 ---------
 
