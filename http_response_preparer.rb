@@ -1,3 +1,4 @@
+require 'Pathname'
 require './http_response'
 
 # Map extensions to their content type
@@ -19,10 +20,12 @@ class HttpResponsePreparer
 
   def prepare(request)
     puts request.fetch(:path)
+    path = Pathname.new(request.fetch(:path)).cleanpath.to_s
+    puts path
     if request.fetch(:path) == '/'
       respond_with(@server_root + "index.html")
     else
-      respond_with(@server_root + request.fetch(:path))
+      respond_with(@server_root + path)
     end
   end
 
@@ -32,6 +35,7 @@ class HttpResponsePreparer
   end
 
   def respond_with(path)
+    puts path
     if File.exists?(path)
 
       send_ok_response(File.binread(path), content_type(path))
